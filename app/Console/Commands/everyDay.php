@@ -45,7 +45,7 @@ class everyDay extends Command
         {
          Mail::raw("Good morning to you and have a productive day ahead.", function($message) use ($all)
         {
-          $message->from('hr@bric.tech');
+          $message->from('hr@bric.solutions');
           $message->to($all->email)->subject('Daily Greetings');
            });
            }
